@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 170" width="100%" height="170">
+  <defs>
+    <linearGradient id="rBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070c" />
+      <stop offset="50%" stop-color="#0a0f1d" />
+      <stop offset="100%" stop-color="#04060a" />
+    </linearGradient>
+
+    <linearGradient id="neonCyanG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+
+    <linearGradient id="neonGreenG" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff87" />
+      <stop offset="100%" stop-color="#60efff" />
+    </linearGradient>
+
+    <filter id="glowF" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <style>
+      .r-txt { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; font-size: 11px; }
+      .r-head { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 800; letter-spacing: 1.5px; }
+      @keyframes pulseDot { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+      .dot-pulse { animation: pulseDot 1.2s infinite; }
+    </style>
+  </defs>
+
+  <rect width="850" height="170" rx="14" fill="url(#rBg)" stroke="#1a2638" stroke-width="1.2" />
+
+  <text x="25" y="26" fill="url(#neonCyanG)" class="r-head" filter="url(#glowF)">📡 OFFENSIVE OPERATIONS &amp; NETWORK SURVEILLANCE</text>
+  <line x1="25" y1="36" x2="825" y2="36" stroke="#162338" stroke-width="1" />
+
+  <g transform="translate(25, 45)" class="r-txt">
+    <!-- Row 1 -->
+    <text y="20" fill="#7d90a8">> [eBPF_PROBE] <tspan fill="#00ff87">Hooked sys_enter_execve() &amp; sys_enter_socket() across ring0</tspan></text>
+    <text y="42" fill="#7d90a8">> [TRAFFIC_INTERCEPT] <tspan fill="#60efff">TLS 1.3 session key extraction &amp; raw packet dissection active</tspan></text>
+    <text y="64" fill="#7d90a8">> [C2_TELEMETRY] <tspan fill="#ff007a">Encrypted mesh websocket established -- 0 trace footprint</tspan></text>
+    <text y="86" fill="#7d90a8">> [STEALTH_DAEMON] <tspan fill="#00ff87">Memory resident (memfd_create) -- No disk binary artifacts</tspan></text>
+    <text y="108" fill="#7d90a8">> [STATUS] <tspan fill="#00f2fe">SYSTEM DOMINANCE VERIFIED // HOSTILE ENVIRONMENT PURGED</tspan></text>
+  </g>
+</svg>
